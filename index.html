@@ -1,31 +1,258 @@
 <html>
 <head>
-  <title>#bfoxdotrocks</title>
+  <title>#tfyi</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="slick.min.js"></script>
+
+  <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.min.css">
+  <link rel="stylesheet" type="text/css" href="slick.css"/>
   <link href='http://fonts.googleapis.com/css?family=Yellowtail|Sonsie+One|Syncopate:400,700|Abril+Fatface|Satisfy' rel='stylesheet' type='text/css'>
   <style type="text/css">
+    @font-face {
+      font-family: XMasLights;
+      src: url(xmaslights.ttf);
+    }
+
     * {
       font-family: 'Abril Fatface', cursive;
+      text-align: center;
     }
     body {
-      background: url('gplaypattern.png');
+      background: url('tartan.jpg');
+      overflow: hidden;
     }
-    h1 {
-      font-family: 'Syncopate', sans-serif;
-      font-weight: bold;
-      text-align: center;
-      font-size: 7em;
+
+    h1 span.letter{
+      font-family: 'XMasLights';
+      font-size: 3em;
+      color: black;
+      line-height: 0.75em;
+      /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+      letter-spacing: -30px;
+      margin: 0;
+      position: relative;
     }
+
+    .bulb {
+      background: white;
+      border-radius: 50%;
+      height: 66px;
+      width: 43px;
+      display: inline-block;
+      position: absolute;
+      left: 7px;
+      top: 20px;
+      z-index: -1;
+      box-shadow: 0 0 100px white;
+    }
+
+/*    .letter:nth-child(even) {
+      color: #e12b24;
+    }*/
+
+    img {
+      margin: 0 auto;
+      max-height: 350px;
+    }
+
+    .slide {
+      margin: 0 20px;
+    }
+
+    .carousel {
+      padding-top: 40px;
+      background: #2d3762;
+      max-height: 355px;
+      border: 10px solid rgb(5,74,7);
+      margin-top: 50px;
+      /*box-shadow: 0 0 100px #37ad5c;*/
+      border-radius: 20px;
+    }
+
+    .slick-slide {
+      opacity: 0.65;
+    }
+
+    .slick-active.slick-center {
+      opacity: 1;
+    }
+
+    .slick-active.slick-center img{
+      -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.36);
+      -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.36);
+      box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.36);
+    }
+
+    .opener {
+      position: absolute;
+      top: 0;
+      background: rgba(0,0,0, 0.75);
+      width: 100%;
+      height: 100%;
+    }
+
+    .opener img{
+      transform: scale(3,3);
+      position: relative;
+      top: 255px;
+      z-index: 2;
+    }
+
+    .opener h2 {
+      display: inline-block;
+      position: absolute;
+      left: 500px;
+      top: 100px;
+      color: white;
+      font-family: inherit;
+      background: rgb(5,74,7);
+      padding: 100px 50px;
+      z-index: 1;
+      transform: rotate(-40deg);
+    }
+
+
+
   </style>
 </head>
 <body>
-  <div class='row'>
+  <section class='row' style='padding-top: 30px'>
     <div class='small-12 columns'>
-      <h1>Fandolf</h1>
+      <h1>
+        <span class='letter'>
+          M
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          E
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          R
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          R
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          Y
+          <span class='bulb'></span>
+        </span>
+      </h1>
+      <h1>
+        <span class='letter'>
+          F
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          A
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          N
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          D
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          O
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          L
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          F
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          S
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          M
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          A
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          S
+          <span class='bulb'></span>
+        </span>
+      </h1>
     </div>
-  </div>
+  </section>
+  <section class='row'>
+    <div class='carousel'>
+      <div class='slide'>
+        <img src="http://scontent-a-pao.cdninstagram.com/hphotos-xap1/t51.2885-15/10784823_1490038174594561_1325992142_n.jpg" tite='fandolf-tough'>
+      </div>
+      <div class='slide'>
+        <img src="http://photos-h.ak.instagram.com/hphotos-ak-xap1/t51.2885-15/10601874_724530957620519_403114848_n.jpg" title='pandolf-osl'>
+      </div>
+      <div class='slide'>
+        <img src="http://photos-a.ak.instagram.com/hphotos-ak-xpa1/t51.2885-15/10375676_803388613059360_132799775_n.jpg" title='wolf-nap'>
+      </div>
+      <div class='slide'>
+        <img src="http://photos-h.ak.instagram.com/hphotos-ak-xpa1/t51.2885-15/10632383_741665495901439_116870185_n.jpg" title='fandolf-wine-country'>
+      </div>
+      <div class='slide'>
+        <img src="http://photos-h.ak.instagram.com/hphotos-ak-xaf1/t51.2885-15/10643952_706813779398447_662768537_n.jpg" title='fandolf-couch'>
+      </div>
+      <div class='slide'>
+        <img src="http://photos-d.ak.instagram.com/hphotos-ak-xfp1/t51.2885-15/10644007_521295458005835_535729749_n.jpg" title='wolf-chameleon'>
+      </div>
+      <div class='slide'>
+        <img src="http://photos-c.ak.instagram.com/hphotos-ak-xap1/t51.2885-15/10655124_532940700172674_519718011_n.jpg" title='x-files-cups'>
+      </div>
+      <div class='slide'>
+        <img src="http://photos-h.ak.instagram.com/hphotos-ak-xpf1/t51.2885-15/1971437_708164065937975_748842752_n.jpg" title='bfox-rox'>
+      </div>
+      <div class='slide'>
+        <img src="http://static.comicvine.com/uploads/scale_small/13/132162/3332057-x-files-season-7.jpg" title='mulder-scully'>
+      </div>
+    </div>
+  </section>
+  <section class='opener'>
+    <img src="christmas-bow.png">
+    <h2>Click to Open</h2>
+  </section>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.carousel').slick({
+        autoplay: true,
+        infinite: true,
+        slidesToShow: 3,
+        autoplaySpeed: 1000,
+        centerMode: true,
+        arrows: false
+      })
+
+      $('.opener').on('click', function(){
+        $(this).hide();
+      })
+
+      $.each($('.bulb'), function(i, bulb){
+        if(i%2 === 0){
+          $(bulb).css('background', '#e12b24')
+        }
+        else {
+          $(bulb).css('background', '#37ad5c')
+        }
+      })
+    })
+  </script>
 </body>
 </html>
