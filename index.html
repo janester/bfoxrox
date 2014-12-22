@@ -25,7 +25,9 @@
       text-align: center;
     }
     body {
-      background: url('tartan.jpg');
+      /*background: url('tartan.jpg');*/
+      background: url('shmancy-xmas.png');
+      background-size: cover;
       overflow: hidden;
     }
 
@@ -41,7 +43,7 @@
     }
 
     .bulb {
-      background: white;
+      background: gold;
       border-radius: 50%;
       height: 66px;
       width: 43px;
@@ -50,12 +52,8 @@
       left: 7px;
       top: 20px;
       z-index: -1;
-      box-shadow: 0 0 100px white;
+      box-shadow: 0 0 100px gold;
     }
-
-/*    .letter:nth-child(even) {
-      color: #e12b24;
-    }*/
 
     img {
       margin: 0 auto;
@@ -69,11 +67,11 @@
     .carousel {
       padding-top: 40px;
       /*background: rgb(186,10,10);*/
-      background: black;
+      background: rgb(2, 41, 2);
       max-height: 355px;
-      border: 10px solid rgb(5,74,7);
+      border: 10px solid rgb(149, 3, 3);
       margin-top: 50px;
-      /*box-shadow: 0 0 100px #37ad5c;*/
+      box-shadow: 0 0 100px red;
       /*border-radius: 20px;*/
     }
 
@@ -233,14 +231,14 @@
         $(this).hide();
       })
 
-      $.each($('.bulb'), function(i, bulb){
-        if(i%2 === 0){
-          $(bulb).css('background', '#e12b24')
-        }
-        else {
-          $(bulb).css('background', '#37ad5c')
-        }
-      })
+      // $.each($('.bulb'), function(i, bulb){
+      //   if(i%2 === 0){
+      //     $(bulb).css('background', '#e12b24')
+      //   }
+      //   else {
+      //     $(bulb).css('background', '#37ad5c')
+      //   }
+      // })
     })
   </script>
 </body>
