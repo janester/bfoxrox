@@ -1,31 +1,247 @@
 <html>
 <head>
-  <title>#bfoxdotrocks</title>
+  <title>#bfoxdotrox</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+  <!-- JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+  <script type="text/javascript" src="slick.min.js"></script>
+  <script type="text/javascript" src="https://s3.amazonaws.com/jane-resume/pics.js"></script>
+
+  <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.4.7/css/foundation.min.css">
+  <link rel="stylesheet" type="text/css" href="slick.css"/>
   <link href='http://fonts.googleapis.com/css?family=Yellowtail|Sonsie+One|Syncopate:400,700|Abril+Fatface|Satisfy' rel='stylesheet' type='text/css'>
   <style type="text/css">
+    @font-face {
+      font-family: XMasLights;
+      src: url(xmaslights.ttf);
+    }
+
     * {
       font-family: 'Abril Fatface', cursive;
+      text-align: center;
     }
     body {
-      background: url('gplaypattern.png');
+      background: url('tartan.jpg');
+      overflow: hidden;
     }
-    h1 {
-      font-family: 'Syncopate', sans-serif;
-      font-weight: bold;
-      text-align: center;
-      font-size: 7em;
+
+    h1 span.letter{
+      font-family: 'XMasLights';
+      font-size: 3em;
+      color: black;
+      line-height: 0.75em;
+      /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;*/
+      letter-spacing: -30px;
+      margin: 0;
+      position: relative;
     }
+
+    .bulb {
+      background: white;
+      border-radius: 50%;
+      height: 66px;
+      width: 43px;
+      display: inline-block;
+      position: absolute;
+      left: 7px;
+      top: 20px;
+      z-index: -1;
+      box-shadow: 0 0 100px white;
+    }
+
+/*    .letter:nth-child(even) {
+      color: #e12b24;
+    }*/
+
+    img {
+      margin: 0 auto;
+      max-height: 350px;
+    }
+
+    .slide {
+      margin: 0 20px;
+    }
+
+    .carousel {
+      padding-top: 40px;
+      /*background: rgb(186,10,10);*/
+      background: black;
+      max-height: 355px;
+      border: 10px solid rgb(5,74,7);
+      margin-top: 50px;
+      /*box-shadow: 0 0 100px #37ad5c;*/
+      /*border-radius: 20px;*/
+    }
+
+    .slick-slide {
+      opacity: 0.25;
+    }
+
+    .slick-active.slick-center {
+      opacity: 1;
+    }
+
+    .slick-active.slick-center img{
+      -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.36);
+      -moz-box-shadow:    7px 7px 5px 0px rgba(50, 50, 50, 0.36);
+      box-shadow:         7px 7px 5px 0px rgba(50, 50, 50, 0.36);
+    }
+
+    .opener {
+      position: absolute;
+      top: 0;
+      background: rgba(0,0,0, 0.75);
+      width: 100%;
+      height: 100%;
+    }
+
+    .opener img{
+      transform: scale(3,3);
+      position: relative;
+      top: 255px;
+      z-index: 2;
+    }
+
+    .opener h2 {
+      display: inline-block;
+      position: absolute;
+      left: 500px;
+      top: 100px;
+      color: white;
+      font-family: inherit;
+      background: rgb(5,74,7);
+      padding: 100px 50px;
+      z-index: 1;
+      transform: rotate(-40deg);
+    }
+
+
+
   </style>
 </head>
 <body>
-  <div class='row'>
+  <audio src="https://s3.amazonaws.com/jane-resume/Best+Christmas+Songs+-+Playlist+-+2014.mp3" autoplay="true"></audio>
+  <section class='row' style='padding-top: 30px'>
     <div class='small-12 columns'>
-      <h1>Fandolf</h1>
+      <h1>
+        <span class='letter'>
+          M
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          E
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          R
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          R
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          Y
+          <span class='bulb'></span>
+        </span>
+      </h1>
+      <h1>
+        <span class='letter'>
+          F
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          A
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          N
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          D
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          O
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          L
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          F
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          S
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          M
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          A
+          <span class='bulb'></span>
+        </span>
+        <span class='letter'>
+          S
+          <span class='bulb'></span>
+        </span>
+      </h1>
     </div>
-  </div>
+  </section>
+  <section class='row'>
+    <div class='carousel'>
+    </div>
+  </section>
+  <section class='opener'>
+    <img src="christmas-bow.png">
+    <h2>Click to Open</h2>
+  </section>
+
+  <script type="text/javascript">
+    var createSlides = function(){
+      var carousel = $('.carousel')
+      var images = _.shuffle(_.union(common, twolf))
+      $.each(images, function(i, image){
+        var slide = $('<div class="slide">').append("<img src='"+ image.src +"' title='"+ image.title +"'>")
+        carousel.append(slide);
+      })
+    };
+
+    $(document).ready(function(){
+
+      createSlides();
+
+      $('.carousel').slick({
+        autoplay: true,
+        infinite: true,
+        slidesToShow: 3,
+        autoplaySpeed: 1000,
+        centerMode: true,
+        arrows: false
+      })
+
+      $('.opener').on('click', function(){
+        $(this).hide();
+      })
+
+      $.each($('.bulb'), function(i, bulb){
+        if(i%2 === 0){
+          $(bulb).css('background', '#e12b24')
+        }
+        else {
+          $(bulb).css('background', '#37ad5c')
+        }
+      })
+    })
+  </script>
 </body>
 </html>
